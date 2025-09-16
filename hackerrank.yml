@@ -17,6 +17,6 @@ configuration:
     default_open_files:
       - public/index.php
     project_menu:
-      run: symfony server:start --no-tls
+      run: symfony server:start --no-tls --allow-all-ip
       install: composer install
       test: ./vendor/bin/phpunit tests
